@@ -7,6 +7,9 @@ const expectedString = ".desrever eb ot gnirts a si sihT"
 
 // Tests
 
+const reverseString = (str: string): string => {
+  return str.split("").reverse().join("")
+}
 console.group("reverseString")
 console.log(reverseString(testString), " => ", expectedString)
 console.groupEnd()

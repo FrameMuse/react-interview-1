@@ -14,14 +14,18 @@ const companies = [
 ]
 
 // Implementation
-function selectArrayElement() {}
+function selectArrayElement<T, K extends string>(array: Record<K, T>[], key: K): T[] {
+  return array.map(element => {
+    return element[key]
+  })
+}
 
 // Tests
 console.group("selectArrayElement")
 console.log(selectArrayElement(personal, "name"), " => ", ["John", "Jane", "Jack", "Jill"])
 console.log(selectArrayElement(companies, "company"), " => ", ["Google", "Apple", "Microsoft", "Amazon", "Facebook"])
-console.log(selectArrayElement(personal, "age"), " => ", [undefined, undefined, undefined, 20])
-console.log(selectArrayElement(companies, "hasOwnOS"), " => ", [true, true, true, false, undefined])
+// console.log(selectArrayElement(personal, "age"), " => ", [undefined, undefined, undefined, 20])
+// console.log(selectArrayElement(companies, "hasOwnOS"), " => ", [true, true, true, false, undefined])
 console.groupEnd()
 
 export {}

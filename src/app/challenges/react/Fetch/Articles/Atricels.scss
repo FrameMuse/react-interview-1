@@ -1,3 +1,17 @@
-@import "~app/assets/scss/bundle.scss";
+.atricels {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 
-.atricels {}
+.item {
+   list-style: none;
+}
+
+// .item:nth-child(n + 2) {
+//     margin-left: 50px;
+// }
+
+.article-wrapper {
+    width: 30%;
+}

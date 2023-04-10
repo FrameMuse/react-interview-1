@@ -1,6 +1,17 @@
 // Implementation
 // ...
 
+const isRecord = (value: unknown): value is Record<string, unknown> => {
+  if (typeof value !== "object" || Array.isArray(value)) return false
+
+  return true
+}
+
+const asd: unknown = {}
+if (isRecord(asd)) {
+  asd.a
+}
+
 // Tests
 console.group("isRecord")
 console.log(isRecord({}), " => ", true)

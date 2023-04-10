@@ -1,7 +1,5 @@
 import { APP_TITLE } from "app/App"
 import Articles from "app/challenges/react/Fetch/Articles/articles."
-import UseForceUpdateTest from "app/challenges/react/Implement/useForceUpdate/useForceUpdate"
-import { Table } from "app/challenges/react/Refactor/Table/Table"
 import Button from "app/ui/common/Button/Button"
 import { Helmet } from "react-helmet"
 
@@ -16,9 +14,9 @@ function HomePage() {
       <h2>Articles</h2>
       <Articles />
       <h2>UseForceUpdateTest</h2>
-      <UseForceUpdateTest />
+      {/* <UseForceUpdateTest /> */}
       <h2>Table</h2>
-      <Table
+      {/* <Table
         head={["Cats", "Dogs", "Non-binary"]}
         info={[
           {
@@ -37,7 +35,7 @@ function HomePage() {
             row3: "Dabmledor"
           }
         ]}
-      />
+      /> */}
       <h2>Modal Popup</h2>
       <Button>Open Popup</Button>
     </>

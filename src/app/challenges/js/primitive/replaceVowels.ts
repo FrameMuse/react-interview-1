@@ -7,6 +7,12 @@ const expectedString = "Th mn sn't  plnt, ths s  stllt."
 
 // Tests
 
+const replaceVowels = (str: string) => {
+  const regExp = new RegExp("[eyuioa]", "gm")
+
+  return str.replaceAll(regExp, "")
+}
+
 console.group("replaceVowels")
 console.log(replaceVowels(testString), " => ", expectedString)
 console.groupEnd()

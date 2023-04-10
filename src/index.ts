@@ -1,3 +1,18 @@
+// Challenges
+// Primitive
+import "app/challenges/js/primitive/oddFilter"
+import "app/challenges/js/primitive/randomInt"
+import "app/challenges/js/primitive/replaceVowels"
+import "app/challenges/js/primitive/reverseString"
+// Async
+import "app/challenges/js/async/resolvedFirst/resolvedFirst"
+import "app/challenges/js/async/delayedPrint/delayedPrint"
+// TS
+import "app/challenges/ts/isRecord"
+import "app/challenges/ts/selectArrayElement"
+import "app/challenges/ts/KebabCase"
+
+// Other
 import App from "app/App"
 import { createElement } from "react"
 import { createRoot } from "react-dom/client"
